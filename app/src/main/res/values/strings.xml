@@ -14,5 +14,7 @@
     <string name="global.sign_up.button_label">Sign Up</string>
 
     <string name="sign_up.account_created_successfully_message">Account created successfully!</string>
+    <string name="weather_history.no_data_found_message">No data found.</string>
+    <string name="weather_history.error_occurred_try_again_message">An error occurred. Please try again.</string>
 
 </resources>
