@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "945417382567",
+    "project_id": "free-auth-eb91d",
+    "storage_bucket": "free-auth-eb91d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945417382567:android:984f1ace26722364718982",
+        "android_client_info": {
+          "package_name": "com.jbarcelona.weatherapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo_AKvR_XJNprJdCzbzbrxjqkAj0g9F-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

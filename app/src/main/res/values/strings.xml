@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">WeatherApp</string>
+
+    <string name="global.name_label">Name</string>
+    <string name="global.name_hint">Name</string>
+    <string name="global.name_error_message">Please enter valid name</string>
+    <string name="global.email_address_label">Email Address</string>
+    <string name="global.email_address_hint">Email Address</string>
+    <string name="global.email_address_error_message">Please enter valid email address</string>
+    <string name="global.password_label">Password</string>
+    <string name="global.password_hint">Password</string>
+    <string name="global.password_error_message">Please enter valid password</string>
+    <string name="global.sign_in.button_label">Sign In</string>
+    <string name="global.sign_up.button_label">Sign Up</string>
+
+    <string name="sign_up.account_created_successfully_message">Account created successfully!</string>
+
 </resources>
