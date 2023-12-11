@@ -16,8 +16,11 @@ object DateUtil {
         return simpleDateFormat.format(millis)
     }
 
-    fun isPast6pm(): Boolean {
-        return false
+    fun isPast6pm(now: String): Boolean {
+        val simpleDateFormat = SimpleDateFormat("HH:mm", Locale.ENGLISH)
+        val end: Date = simpleDateFormat.parse("18:00") as Date
+        val converted = simpleDateFormat.parse(now) as Date
+        return end.before(converted)
     }
 
     fun getCurrentDateString(): String {

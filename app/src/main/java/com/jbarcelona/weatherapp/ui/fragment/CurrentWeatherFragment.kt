@@ -21,6 +21,10 @@ import com.jbarcelona.weatherapp.ui.viewmodel.CurrentWeatherViewModel
 import com.jbarcelona.weatherapp.util.DateUtil
 import com.jbarcelona.weatherapp.util.TemperatureUtil
 import dagger.hilt.android.AndroidEntryPoint
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Date
+import java.util.Locale
 
 @AndroidEntryPoint
 class CurrentWeatherFragment : BaseFragment() {
@@ -77,7 +81,10 @@ class CurrentWeatherFragment : BaseFragment() {
             binding.tvSunsetValue.text = DateUtil.getDateStringFromTimestamp(sys?.sunset?.toLong() ?: 0L)
             binding.ivWeather.visibility = View.VISIBLE
             binding.ivLocation.visibility = View.VISIBLE
-            if (DateUtil.isPast6pm()) {
+            val simpleDateFormat = SimpleDateFormat("HH:mm", Locale.ENGLISH)
+            val currentTime: Date = Calendar.getInstance().time
+            val now = simpleDateFormat.format(currentTime)
+            if (DateUtil.isPast6pm(now)) {
                 setImageViewDrawable(binding.ivWeather, R.drawable.moon)
             } else {
                 when (weather.uppercase()) {
