@@ -1,6 +1,5 @@
 package com.jbarcelona.weatherapp.network.response
 
-import com.jbarcelona.weatherapp.network.model.Weather
 import com.squareup.moshi.Json
 
 data class GetWeatherResponseData(

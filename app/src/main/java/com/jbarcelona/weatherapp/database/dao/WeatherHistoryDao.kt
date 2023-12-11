@@ -12,6 +12,6 @@ interface WeatherHistoryDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertWeather(weatherHistory: WeatherHistory): Long
 
-    @Query("SELECT * FROM WEATHER_HISTORY")
+    @Query("SELECT * FROM WEATHER_HISTORY ORDER BY timestamp DESC")
     suspend fun getWeatherHistory(): List<WeatherHistory>
 }

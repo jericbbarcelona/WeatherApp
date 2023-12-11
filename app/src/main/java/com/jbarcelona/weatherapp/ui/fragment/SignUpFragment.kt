@@ -34,7 +34,6 @@ class SignUpFragment : BaseFragment() {
             false
         ).apply {
             this.lifecycleOwner = activity
-            this.viewModel = viewModel
         }
         setupObservers()
         initListeners()
@@ -42,7 +41,6 @@ class SignUpFragment : BaseFragment() {
     }
 
     private fun initListeners() {
-        hideTextAfterTextChanged(binding.etName, binding.tvErrorName)
         hideTextAfterTextChanged(binding.etEmailAddress, binding.tvErrorEmailAddress)
         hideTextAfterTextChanged(binding.etPassword, binding.tvErrorPassword)
         binding.btnSignUp.setOnClickListener {
@@ -107,7 +105,7 @@ class SignUpFragment : BaseFragment() {
     }
 
     private fun validateFields(): Boolean {
-        return isValidEmail() and isValidPassword() and isValidName()
+        return isValidEmail() and isValidPassword()
     }
 
     private fun isValidEmail(): Boolean {
@@ -123,15 +121,6 @@ class SignUpFragment : BaseFragment() {
         val password = binding.etPassword.text.toString().trim()
         if (!ValidUtil.isValidPassword(password)) {
             binding.tvErrorPassword.visibility = View.VISIBLE
-            return false
-        }
-        return true
-    }
-
-    private fun isValidName(): Boolean {
-        val name = binding.etName.text.toString().trim()
-        if (ValidUtil.isEmpty(name)) {
-            binding.tvErrorName.visibility = View.VISIBLE
             return false
         }
         return true

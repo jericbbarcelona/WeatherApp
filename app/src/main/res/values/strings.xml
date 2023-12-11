@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">WeatherApp</string>
+    <string name="app_name_formatted">Weather App</string>
 
+    <string name="global.logout_alert_title">Logout</string>
+    <string name="global.logout_alert_message">Are you sure you want to logout?</string>
+    <string name="global.logout_option_yes">Yes</string>
+    <string name="global.logout_option_cancel">Cancel</string>
     <string name="global.name_label">Name</string>
     <string name="global.name_hint">Name</string>
     <string name="global.name_error_message">Please enter valid name</string>
@@ -12,9 +17,15 @@
     <string name="global.password_error_message">Please enter valid password</string>
     <string name="global.sign_in.button_label">Sign In</string>
     <string name="global.sign_up.button_label">Sign Up</string>
-
+    <string name="global.sign_in.text_label">Already have an account? Sign In</string>
+    <string name="global.sign_up.text_label">Don\'t have an account? Sign Up</string>
+    <string name="global.sign_in.welcome_back_label">Welcome back!</string>
+    <string name="global.sign_in.login_your_account_label">Login to your account</string>
+    <string name="global.sign_up.welcome_label">Welcome!</string>
+    <string name="global.sign_up.create_your_account_label">Create your account</string>
     <string name="sign_up.account_created_successfully_message">Account created successfully!</string>
     <string name="weather_history.no_data_found_message">No data found.</string>
     <string name="weather_history.error_occurred_try_again_message">An error occurred. Please try again.</string>
-
+    <string name="current_weather.location_not_found_message">Location not found. Please try again.</string>
+    <string name="current_weather.location_not_found_permission_denied_message">Location not found due to permission not turned on. Please grant permission and try again.</string>
 </resources>

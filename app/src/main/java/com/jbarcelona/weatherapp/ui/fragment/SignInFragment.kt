@@ -36,7 +36,6 @@ class SignInFragment : BaseFragment() {
             false
         ).apply {
             this.lifecycleOwner = activity
-            this.viewModel = viewModel
         }
         setupObservers()
         initListeners()

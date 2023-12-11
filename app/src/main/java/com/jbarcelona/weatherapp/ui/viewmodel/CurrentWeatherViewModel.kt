@@ -16,10 +16,10 @@ class CurrentWeatherViewModel @Inject constructor(
 ) : BaseViewModel() {
     val populateDataEvent = MutableLiveData<WeatherResult>()
 
-    fun getWeather() {
+    fun getWeather(longitude: String, latitude: String) {
         viewModelScope.launch {
             try {
-                val responseData = mainRepository.getWeather("14.5995121", "120.984222")
+                val responseData = mainRepository.getWeather(latitude, longitude)
                 if (responseData.data != null) {
                     populateDataEvent.postValue(WeatherResult.Success(responseData.data))
                     responseData.data.apply {
@@ -27,7 +27,7 @@ class CurrentWeatherViewModel @Inject constructor(
                             WeatherHistory(
                                 id = UUID.randomUUID().toString(),
                                 weather = weather?.firstOrNull()?.main,
-                                temperature = "${main?.temp}°",
+                                temperature = "${main?.temp}",
                                 timestamp = System.currentTimeMillis().toString(),
                                 location = "${name}, ${sys?.country}"
                             )

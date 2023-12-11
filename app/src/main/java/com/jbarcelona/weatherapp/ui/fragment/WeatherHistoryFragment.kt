@@ -31,7 +31,6 @@ class WeatherHistoryFragment : BaseFragment() {
             false
         ).apply {
             this.lifecycleOwner = activity
-            this.viewModel = viewModel
         }
         initAdapter()
         viewModel.getWeatherHistory()
