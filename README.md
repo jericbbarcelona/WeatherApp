@@ -5,3 +5,5 @@ The architecture used on this app is MVVM and Dagger Hilt as dependency injectio
 
 ## Project Setup
 The API_KEY must put inside the Constants.kt file in order to fetch the weather data accordingly.
+
+The gradle plugins for com.android.application and com.android.library may vary depending on the Android Studio version. For the development, I used Electric Eel version which is 7.4.2, for Dolphin version you may set the version to 7.3.0 to be able to build the project successfully.
