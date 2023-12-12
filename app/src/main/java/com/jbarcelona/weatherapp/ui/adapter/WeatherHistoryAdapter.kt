@@ -32,6 +32,10 @@ class WeatherHistoryAdapter(
             Constants.RAIN -> setImageViewDrawable(holder.ivWeather, R.drawable.raining)
             Constants.CLOUDS -> setImageViewDrawable(holder.ivWeather, R.drawable.cloudy)
             Constants.SUN -> setImageViewDrawable(holder.ivWeather, R.drawable.sun)
+            Constants.CLEAR -> setImageViewDrawable(holder.ivWeather, R.drawable.clear)
+            Constants.THUNDERSTORM -> setImageViewDrawable(holder.ivWeather, R.drawable.storm)
+            Constants.SNOW -> setImageViewDrawable(holder.ivWeather, R.drawable.snowflake)
+            Constants.DRIZZLE -> setImageViewDrawable(holder.ivWeather, R.drawable.drizzle)
         }
     }
 

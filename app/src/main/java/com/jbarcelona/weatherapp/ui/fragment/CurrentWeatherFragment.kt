@@ -91,6 +91,10 @@ class CurrentWeatherFragment : BaseFragment() {
                     Constants.RAIN -> setImageViewDrawable(binding.ivWeather, R.drawable.raining)
                     Constants.CLOUDS -> setImageViewDrawable(binding.ivWeather, R.drawable.cloudy)
                     Constants.SUN -> setImageViewDrawable(binding.ivWeather, R.drawable.sun)
+                    Constants.CLEAR -> setImageViewDrawable(binding.ivWeather, R.drawable.clear)
+                    Constants.THUNDERSTORM -> setImageViewDrawable(binding.ivWeather, R.drawable.storm)
+                    Constants.DRIZZLE -> setImageViewDrawable(binding.ivWeather, R.drawable.drizzle)
+                    Constants.SNOW -> setImageViewDrawable(binding.ivWeather, R.drawable.snowflake)
                 }
             }
         }
